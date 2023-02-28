@@ -1,5 +1,6 @@
 from selenium.webdriver import Chrome
 from selenium.webdriver.common.by import By
+import csv
 
 driver = Chrome()
 
@@ -11,3 +12,9 @@ value2 = driver.find_element(By.XPATH, '//*[@id="5013248_prod_price"]/div[1]/spa
 
 print(f'The product 1 has value: {value1.text}. The product 2 has value: {value2.text}')
 
+#CSV
+
+with open("products.csv", "w", newline="") as file:
+    writer = csv.writer(file)
+    writer.writerow(("Value1", "Value2"))
+    writer.writerow((value1.text, value2.text))
