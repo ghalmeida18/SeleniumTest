@@ -4,7 +4,8 @@ import csv
 
 driver = Chrome()
 
-driver.get('https://www.kohls.com/catalog/mens-nike-shoes.jsp?CN=Gender:Mens+Brand:Nike+Department:Shoes&icid=sl-nav-ftw-shoes-mens-nike&kls_sbp=84311432945461347682116220168293182461')
+driver.get('https://www.kohls.com/catalog/mens-nike-shoes.jsp?CN=Gender:Mens+Brand:'
+           'Nike+Department:Shoes&icid=sl-nav-ftw-shoes-mens-nike&kls_sbp=84311432945461347682116220168293182461')
 
 value1 = driver.find_element(By.XPATH, '//*[@id="902047_prod_price"]/div[1]/span[1]')
 
