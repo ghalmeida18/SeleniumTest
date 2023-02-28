@@ -9,7 +9,7 @@ driver.get('https://www.kohls.com/catalog/mens-nike-shoes.jsp?CN=Gender:Mens+Bra
 
 value1 = driver.find_element(By.XPATH, '//*[@id="902047_prod_price"]/div[1]/span[1]')
 
-value2 = driver.find_element(By.XPATH, '//*[@id="5013248_prod_price"]/div[1]/span[1]')
+value2 = driver.find_element(By.XPATH, '//*[@id="4228758_prod_price"]/div[1]/span[1]')
 
 print(f'The product 1 has value: {value1.text}. The product 2 has value: {value2.text}')
 
